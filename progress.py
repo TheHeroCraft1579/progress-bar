@@ -9,15 +9,10 @@ app.config["SECRET_KEY"] = os.environ.get(
 
 
 def get_progress_color(progress, scale):
-    ratio = progress / scale
-
-    if ratio < 0.3:
-        return "#d9534f"
-    if ratio < 0.7:
-        return "#f0ad4e"
-
-    return "#5cb85c"
-
+    if progress < 80:
+        return "#001fa6"
+    else:
+        return "#1df700"
 
 def get_template_fields(progress):
     title = request.args.get("title")
