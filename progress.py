@@ -10,7 +10,7 @@ app.config["SECRET_KEY"] = os.environ.get(
 
 def get_progress_color(progress, scale):
     if progress < 80:
-        return "#001fa6"
+        return "#17c400"
     else:
         return "#1df700"
 

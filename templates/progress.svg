@@ -5,7 +5,7 @@
     <stop offset="1" stop-opacity=".1"/>
   </linearGradient>
 
-  <rect rx="30" x="0" width="{{ title_width + progress_width }}" height="15" fill="#{{ title_color }}"/>
+  <rect rx="3" x="0" width="{{ title_width + progress_width }}" height="15" fill="#{{ title_color }}"/>
   <rect rx="5" x="{{ title_width }}" width="{{ progress_width }}" height="15" fill="#555" />
   <rect rx="5" x="{{ title_width }}" width="0" height="15" fill="{{ progress_color }}"> 
 	<animate attributeName="width" from="0" to="{{ [progress/scale, 1] | min * progress_width | int }}" begin="0.1s" dur="{{progress/50}}" fill="freeze" />
